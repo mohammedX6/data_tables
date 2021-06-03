@@ -108,7 +108,7 @@ class NativeDataTable extends StatelessWidget {
     this.titleName,
     this.alwaysShowDataTable = false,
   }) : rows = _buildRows(itemCount, itemBuilder);
-  final int? titleName;
+  final String? titleName;
 
   final int? sortColumnIndex;
   final bool? sortAscending;
