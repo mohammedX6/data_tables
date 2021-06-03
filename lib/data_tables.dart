@@ -105,8 +105,10 @@ class NativeDataTable extends StatelessWidget {
     this.noItems,
     this.mobileIsLoading,
     this.mobileSlivers,
+    this.titleName,
     this.alwaysShowDataTable = false,
   }) : rows = _buildRows(itemCount, itemBuilder);
+  final int? titleName;
 
   final int? sortColumnIndex;
   final bool? sortAscending;
@@ -191,6 +193,7 @@ class NativeDataTable extends StatelessWidget {
       isRowCountApproximate: rowCountApproximate,
       isLoading: mobileIsLoading,
       noItems: noItems,
+      titleName:titleName
     );
   }
 
