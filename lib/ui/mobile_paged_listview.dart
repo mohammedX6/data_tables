@@ -114,7 +114,7 @@ class _NativePagedListViewState extends State<PagedListView> {
                                           },
                                         )
                                       : null,
-                                  title: Text("Operation ${index.toString()}"),
+                                  title: Text("Operation ${(index+1).toString()}"),
                                   children: _buildMobileChildren(index),
                                 );
                               },
