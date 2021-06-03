@@ -193,7 +193,8 @@ class NativeDataTable extends StatelessWidget {
       isRowCountApproximate: rowCountApproximate,
       isLoading: mobileIsLoading,
       noItems: noItems,
-      titleName:titleName
+      titleName:titleName,
+      listSize:itemCount
     );
   }
 
