@@ -23,7 +23,7 @@ class PagedListView extends StatefulWidget {
     this.slivers,
     this.titleName
   });
-  final String titleName;
+  final String? titleName;
   final double initialScrollOffset;
   final List<DataColumn> columns;
   final List<DataRow> rows;
