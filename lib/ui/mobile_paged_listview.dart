@@ -114,7 +114,7 @@ class _NativePagedListViewState extends State<PagedListView> {
                                           },
                                         )
                                       : null,
-                                  title: widget.rows[index].cells.first.child,
+                                  title: "Filter $index.toString()",
                                   children: _buildMobileChildren(index),
                                 );
                               },
