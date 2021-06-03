@@ -21,7 +21,7 @@ class PagedListView extends StatefulWidget {
     this.noItems,
     this.isLoading,
     this.slivers,
-    this.titleName
+    this.titleName,this.listSize
   });
   final String? titleName;
   final double initialScrollOffset;
@@ -40,7 +40,7 @@ class PagedListView extends StatefulWidget {
   final RefreshCallback? onRefresh;
   final bool isRowCountApproximate;
   final List<Widget>? slivers;
-
+  final int listSize;
   @override
   _NativePagedListViewState createState() => _NativePagedListViewState();
 }
@@ -97,7 +97,7 @@ class _NativePagedListViewState extends State<PagedListView> {
               if (widget.isLoading != null && widget.rows.isEmpty)
                 Center(child: widget.isLoading)
               else
-                widget.noItems != null && widget.rows.isEmpty
+                widget.noItems != null && widget.listSize==0
                     ? Center(child: widget.noItems)
                     : SliverList(
                         delegate: SliverChildBuilderDelegate(
