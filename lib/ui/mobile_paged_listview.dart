@@ -114,7 +114,7 @@ class _NativePagedListViewState extends State<PagedListView> {
                                           },
                                         )
                                       : null,
-                                  title: "Filter $index.toString()",
+                                  title: "Operation $index.toString()",
                                   children: _buildMobileChildren(index),
                                 );
                               },
