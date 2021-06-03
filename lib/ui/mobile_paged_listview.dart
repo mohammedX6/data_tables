@@ -21,8 +21,9 @@ class PagedListView extends StatefulWidget {
     this.noItems,
     this.isLoading,
     this.slivers,
+    this.titleName
   });
-
+  final String titleName;
   final double initialScrollOffset;
   final List<DataColumn> columns;
   final List<DataRow> rows;
@@ -114,7 +115,7 @@ class _NativePagedListViewState extends State<PagedListView> {
                                           },
                                         )
                                       : null,
-                                  title: Text("Operation ${(index+1).toString()}"),
+                                  title: Text("${widget.titleName} ${(index+1).toString()}"),
                                   children: _buildMobileChildren(index),
                                 );
                               },
