@@ -40,7 +40,7 @@ class PagedListView extends StatefulWidget {
   final RefreshCallback? onRefresh;
   final bool isRowCountApproximate;
   final List<Widget>? slivers;
-  final int listSize;
+  final int? listSize;
   @override
   _NativePagedListViewState createState() => _NativePagedListViewState();
 }
@@ -84,11 +84,11 @@ class _NativePagedListViewState extends State<PagedListView> {
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        Expanded(
+    widget.noItems != null && widget.listSize==0
+    ? widget.noItems??Text('No Items '):    Expanded(
           child: CustomScrollView(
             controller: _controller,
             slivers: <Widget>[
-              ...?widget.slivers,
               if (widget.onRefresh == null)
                 SliverToBoxAdapter(child: Container())
               else
@@ -97,9 +97,7 @@ class _NativePagedListViewState extends State<PagedListView> {
               if (widget.isLoading != null && widget.rows.isEmpty)
                 Center(child: widget.isLoading)
               else
-                widget.noItems != null && widget.listSize==0
-                    ? Center(child: widget.noItems)
-                    : SliverList(
+              SliverList(
                         delegate: SliverChildBuilderDelegate(
                           widget.mobileItemBuilder ??
                               (context, index) {
