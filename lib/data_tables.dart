@@ -31,7 +31,7 @@ class NativeDataTable extends StatelessWidget {
     this.noItems,
     this.mobileIsLoading,
     this.mobileSlivers,
-    this.alwaysShowDataTable = false,
+    this.alwaysShowDataTable = false,this.titleNameBuilder,this.listSizeBuilder
   });
 
   NativeDataTable.fromJson({
@@ -62,7 +62,7 @@ class NativeDataTable extends StatelessWidget {
     this.noItems,
     this.mobileIsLoading,
     this.mobileSlivers,
-    this.alwaysShowDataTable = false,
+    this.alwaysShowDataTable = false,this.listSizeBuilder,this.titleNameBuilder
   })  : assert(items.isNotEmpty || columnKeys != null),
         columns = (columnKeys ?? items[0].keys.toList()).map((e) {
           if (columnBuilder != null) return columnBuilder(e);
@@ -105,11 +105,12 @@ class NativeDataTable extends StatelessWidget {
     this.noItems,
     this.mobileIsLoading,
     this.mobileSlivers,
-    this.titleName,
+    this.titleNameBuilder,
     this.alwaysShowDataTable = false,
+    this.listSizeBuilder
   }) : rows = _buildRows(itemCount, itemBuilder);
-  final String? titleName;
-
+  final String? titleNameBuilder;
+  final int? listSizeBuilder;
   final int? sortColumnIndex;
   final bool? sortAscending;
   final ValueChanged<bool?>? onSelectAll;
@@ -193,8 +194,8 @@ class NativeDataTable extends StatelessWidget {
       isRowCountApproximate: rowCountApproximate,
       isLoading: mobileIsLoading,
       noItems: noItems,
-      titleName:titleName,
-      listSize:itemCount
+      titleName:titleNameBuilder,
+      listSize:listSizeBuilder
     );
   }
 
