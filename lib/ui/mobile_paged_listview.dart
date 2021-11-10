@@ -225,7 +225,7 @@ class _NativePagedListViewState extends State<PagedListView> {
                             child: FlatButton(
                               child: Text(
                                 "Close",
-                                style: Theme.of(context).textTheme.headline,
+                                style: Theme.of(context).textTheme.headline5,
                               ),
                               onPressed: () {
                                 _sortController!.close();
