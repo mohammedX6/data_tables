@@ -222,7 +222,7 @@ class _NativePagedListViewState extends State<PagedListView> {
                         Container(
                           padding: EdgeInsets.only(top: 10.0, bottom: 10.0),
                           child: Container(
-                            child: FlatButton(
+                            child: TextButton(
                               child: Text(
                                 "Close",
                                 style: Theme.of(context).textTheme.headline5,
