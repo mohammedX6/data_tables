@@ -1,35 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca160bec-0575-4943-95ce-117072a81cb2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../data_table/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data_table/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data_table/.idea/libraries/Dart_Packages.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data_table/.idea/libraries/Dart_SDK.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data_table/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data_table/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data_table/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data_table/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data_table/.metadata" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data_table/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data_table/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data_table/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data_table/data_table.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data_table/lib/data_table.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data_table/pubspec.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data_table/test/data_table_test.dart" beforeDir="false" />
+    <list default="true" id="ca160bec-0575-4943-95ce-117072a81cb2" name="Default Changelist" comment="fixed flutter upgrade">
+      <change beforePath="$PROJECT_DIR$/lib/ui/mobile_paged_listview.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/mobile_paged_listview.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/stateless_datatable.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/stateless_datatable.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/.dart_tool/" />
-    <ignored path="$PROJECT_DIR$/.idea/" />
-    <ignored path="$PROJECT_DIR$/.pub/" />
-    <ignored path="$PROJECT_DIR$/build/" />
-    <ignored path="$PROJECT_DIR$/example/.pub/" />
-    <ignored path="$PROJECT_DIR$/example/build/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -46,14 +33,18 @@
     </leaf>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
   <component name="ProjectFrameBounds">
     <option name="x" value="683" />
     <option name="y" value="343" />
     <option name="width" value="2569" />
     <option name="height" value="1529" />
   </component>
+  <component name="ProjectId" id="2uOb4RwCGmBcc2zoxPMmYlWQaGq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -77,11 +68,23 @@
       <pane id="AndroidView" />
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="dart.analysis.tool.window.force.activate" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="show.migrate.to.gradle.popup" value="false" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "show.migrate.to.gradle.popup": "false"
+  }
+}]]></component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -94,6 +97,7 @@
       </list>
     </option>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -136,8 +140,11 @@
       <window_info anchor="right" id="Palette&#9;" />
     </layout>
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="fixed flutter upgrade" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed flutter upgrade" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/lib/data_tables.dart">
